@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fernly — Team Workspace</title><link rel="stylesheet" href="styles.css"></head>
+<body data-accent="forest">
+<div class="workspace">
+ <aside class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-icon">✓</span><b>Fernly</b><button id="collapse" title="Collapse">‹</button></div>
+  <div class="side-label">MENU</div>
+  <nav id="navigation">
+   <button class="nav active" data-page="Dashboard"><span>▦</span><b>Dashboard</b></button>
+   <button class="nav" data-page="Tasks"><span>☷</span><b>Tasks</b><i>12</i></button>
+   <button class="nav" data-page="Calendar"><span>▦</span><b>Calendar</b></button>
+   <button class="nav" data-page="Analytics"><span>⌁</span><b>Analytics</b></button>
+   <button class="nav" data-page="Team"><span>♙</span><b>Team</b></button>
+  </nav>
+  <div class="side-label general">GENERAL</div>
+  <nav>
+   <button class="nav" data-page="Settings"><span>⚙</span><b>Settings</b></button>
+   <button class="nav" data-page="Help"><span>?</span><b>Help</b></button>
+   <button class="nav" data-page="Logout"><span>↪</span><b>Logout</b></button>
+  </nav>
+  <div class="download-card"><div class="download-logo">◉</div><b>Fernly for iOS &amp;<br>Android</b><small>Your team, in your pocket.</small><button id="downloadBtn">Download</button></div>
+ </aside>
+ <main class="main">
+  <header class="topbar"><label class="search">⌕ <input id="search" placeholder="Search tasks, projects, people..."><kbd>⌘ K</kbd></label><div class="top-right"><button class="icon-btn" id="quickAdd">＋</button><button class="icon-btn">♧</button><button class="icon-btn">◷</button><span class="avatar">NC</span><div class="user"><b>Noah Castell</b><small>noah@fernly.app</small></div></div></header>
+  <section id="content"></section>
+ </main>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modal-backdrop" id="modal"><form class="modal" id="modalForm"><button type="button" class="close" id="close">×</button><div class="eyebrow">FERNLY WORKSPACE</div><h2 id="modalTitle">New task</h2><div id="modalFields"></div><div class="modal-actions"><button type="button" class="secondary" id="cancel">Cancel</button><button class="primary">Save</button></div></form></div>
+<script src="app.js"></script></body></html>
